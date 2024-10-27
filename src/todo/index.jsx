@@ -78,17 +78,19 @@ const TodoHome = ()=>{
         const changeObj = todoList.find(eachTodo=>(eachTodo.id === id));
         const updatedData = todoList.map(eachTodo=>{
             if(id === eachTodo.id){
-                return {...eachTodo,isDone:!eachTodo.isDone}
+                return {...eachTodo,isDone:!eachTodo.isDone,time:`done ${dateTime}`}
             }
             return eachTodo
         })
+
+        setTodoList(updatedData)
 
        const response = await axios.put(`https://todobackenddepl-1.onrender.com/updateTodo/${id}`,{isDone:!changeObj.isDone,time:`done ${dateTime}`}).then(response=>{
             return response
         }).catch(err=>{
             return err
         })
-        setTodoList(updatedData)
+        
         
         
         
