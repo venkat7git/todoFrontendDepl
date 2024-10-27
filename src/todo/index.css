@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+body{
+    background-color: rgb(6, 1, 33);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:50px
+}
+
+.todo-heading{
+    color: aliceblue;
+    font-family: "Open Sans";
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.buttons-container{
+    text-align: center;
+}
+
+.create-button,.list-button{
+    width: 100px;
+    padding: 7px;
+    color: aliceblue;
+    border: 0px solid;
+    font-family: "Open Sans";
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+}
+.span-element{
+    color: aliceblue;
+    font-weight: bold;
+}
+.hr-line{
+    width: 500px;
+    border: 2px solid #1c1c38;
+    margin-bottom: 20px;
+}
+
+
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin-top: 4px;
+    background-color: transparent;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.add-button{
+    height: 40px;
+    width: 45px;
+    border: 0px solid;
+    color: #ffffff;
+    background-color: rgb(25, 63, 75);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.add-button:hover{
+    background-color: rgb(24, 105, 31);
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.create-add-container{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.list-container{
+    list-style-type: none;
+    padding: 0px;
+}
+.mytasks-heading{
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.loading-container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-head-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.refresh-button{
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(7, 93, 101);
+    color: #ffffff;
+    border: 0px solid;
+    font-size: 12px;
+    align-content: center;
+    padding: 7px;
+    
+}
+
+.empty-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-text{
+    color: #ffffff;
+}
+
+.refresh-button:hover{
+    border: 2px solid #ffffff;
+}
