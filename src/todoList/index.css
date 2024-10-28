@@ -1,32 +1,29 @@
-.checkbox{
+.checkbox {
     width: 18px;
     height: 18px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border-radius: 2px;
-    
 }
 
-
-.list-item{
+.list-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background-color: transparent;
     border-radius: 7px;
-   
 }
 
-.todo-text{
+.todo-text {
     color: #19034b;
     font-weight: bold;
-    text-wrap: wrap;
     overflow-wrap: break-word;
-    
 }
-.todo-item{
-    background-image: linear-gradient(to right,#99d0b2,#85887f,#dc9dda);
-    width: 390px;
+
+.todo-item {
+    background-image: linear-gradient(to right, #99d0b2, #85887f, #dc9dda);
+    width: 100%; /* Make it responsive */
+    max-width: 390px; /* Set a max width */
     min-height: 50px;
     border-style: solid;
     border-width: 5px;
@@ -35,72 +32,113 @@
     border-top: none;
     border-bottom: none;
     border-radius: 7px;
-    align-content: center;
-    padding: 4px 15px 4px 15px;
+    padding: 4px 15px;
     margin-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.delete-btn{
+.delete-btn {
     width: 50px;
     height: 50px;
     border-radius: 7px;
-    background-image: linear-gradient(to right,#5d99b4,#9971b4);
-    border: 0px solid;
+    background-image: linear-gradient(to right, #5d99b4, #9971b4);
+    border: 0;
 }
-.delete-btn:hover{
-    background-image: linear-gradient(to right,#8b2607,#5d0c0e);
+
+.delete-btn:hover {
+    background-image: linear-gradient(to right, #8b2607, #5d0c0e);
     border: 2px solid #ffffff;
     cursor: pointer;
 }
 
-.input-cont{
+.input-cont {
     width: 50px;
     height: 50px;
     border-radius: 7px;
-    /* background-image: linear-gradient(to right,#984f92,#4f7bb0); */
-    border: 0px solid;
+    border: 0;
     margin-right: 10px;
     text-align: center;
-    align-content: center;
 }
-.input-cont:hover{
+
+.input-cont:hover {
     border: 2px solid #ffffff;
 }
 
-.date-para{
-    color: #ffffff;
+.date-para {
+    color: #314848;
     text-align: end;
     margin-bottom: 4px;
-    color: #314848;
     font-weight: bold;
     font-size: 12px;
 }
-.item{
+
+.item {
     margin-bottom: 20px;
 }
 
-.edit-button{
+.edit-button {
     border: none;
     background-color: transparent;
-    
-    
 }
 
-.edit-button:hover{
+.edit-button:hover {
     cursor: pointer;
 }
 
-.edit-input{
+.edit-input {
     height: 30px;
     border: none;
     outline: none;
     font-size: 16px;
     color: #094215;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     cursor: text;
     font-style: italic;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .todo-item {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%; /* Responsive width */
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+
+    .delete-btn, .input-cont {
+        width: 40px; /* Smaller buttons */
+        height: 40px;
+    }
+
+    .date-para {
+        font-size: 10px; /* Smaller text */
+    }
+
+    .edit-input {
+        font-size: 14px; /* Adjusted font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .todo-item {
+        width: 100%; /* Full width on smaller screens */
+        padding: 8px; /* More padding for touch targets */
+    }
+
+    .delete-btn {
+        width: 35px; /* Further reduce size */
+        height: 35px;
+    }
+
+    .edit-input {
+        height: 28px; /* Smaller input */
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .date-para {
+        font-size: 10px; /* Maintain smaller text */
+    }
 }
