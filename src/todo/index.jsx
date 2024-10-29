@@ -189,6 +189,7 @@ const TodoHome = ()=>{
             time:time,
             isDone:false
         }
+        setTodoList([newTodo,...todoList])
         await axios.post(`https://todobackenddepl-1.onrender.com/newTodo`,newTodo).then(response=>{
             console.log(response)
         }).catch(err=>{

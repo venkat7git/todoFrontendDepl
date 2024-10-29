@@ -25,7 +25,7 @@
     
 }
 .todo-item{
-    background-image: linear-gradient(to right,#99d0b2,#85887f,#dc9dda);
+    
     width: 390px;
     min-height: 50px;
     border-style: solid;
@@ -98,9 +98,8 @@
     border: none;
     outline: none;
     font-size: 16px;
-    color: #094215;
+    color: #000000;
     padding: 0px;
     margin: 0px;
     cursor: text;
-    font-style: italic;
 }
