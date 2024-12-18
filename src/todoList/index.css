@@ -17,6 +17,8 @@
    
 }
 
+
+
 .todo-text{
     color: #19034b;
     font-weight: bold;
@@ -66,6 +68,7 @@
     text-align: center;
     align-content: center;
 }
+
 .input-cont:hover{
     border: 2px solid #ffffff;
 }
@@ -80,6 +83,24 @@
 }
 .item{
     margin-bottom: 20px;
+}
+
+@media screen and (max-width:576px) {
+    
+    .item{
+        width: 100%;
+    }
+    
+    .checkbox{
+        width: 50px;
+    }
+    .delete-btn{
+        width: 80px;
+    }
+    .todo-item{
+        min-width: 180px;
+    }
+
 }
 
 .edit-button{
@@ -104,56 +125,3 @@
     cursor: text;
 }
 
-@media (max-width: 768px) {
-    .todo-item {
-        width: 90%; /* Adjust to take up available space */
-        flex-direction: column; /* Stack elements */
-        padding: 10px;
-        margin: 0 auto 20px auto;
-    }
-
-    .todo-text {
-        font-size: 14px; /* Reduce font size */
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .delete-btn, .input-cont {
-        width: 40px; /* Reduce button size */
-        height: 40px;
-    }
-}
-
-/* For smartphones (screen width up to 480px) */
-@media (max-width: 480px) {
-    .todo-item {
-        width: 100%; /* Take full width */
-        padding: 8px;
-        flex-direction: column; /* Stack elements */
-        align-items: flex-start; /* Align to the start */
-    }
-
-    .todo-text {
-        font-size: 12px; /* Further reduce font size */
-        text-align: left;
-        margin-bottom: 5px;
-    }
-
-    .delete-btn, .input-cont {
-        width: 35px; /* Further reduce button size */
-        height: 35px;
-    }
-
-    .checkbox {
-        width: 15px; /* Adjust checkbox size */
-        height: 15px;
-    }
-
-    .edit-input {
-        font-size: 14px; /* Reduce edit input size */
-    }
-
-    .date-para {
-        font-size: 10px; /* Smaller text for dates */
-    }
-}

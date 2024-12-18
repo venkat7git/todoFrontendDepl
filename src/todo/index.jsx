@@ -202,10 +202,10 @@ const TodoHome = ()=>{
 
 
     return (
-        <div>
+        <div className='input-tasks-container'>
             <h1 className='todo-heading'>TODO LIST</h1>
             <div className='create-add-container'>
-                <input onChange={onChangeInput} value={todoText} placeholder='Enter what you need to done'/>
+                <input className='search-input' onChange={onChangeInput} value={todoText} placeholder='Enter what you need to done'/>
                 <button onClick={onClickAdd} type='button' className='add-button'>Add</button>
             </div>
             <div className='save-head-container'>

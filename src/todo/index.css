@@ -3,10 +3,11 @@ body{
     background-color: rgb(6, 1, 33);
     min-height: 100vh;
     display: flex;
+    margin: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:50px
+    
 }
 
 .todo-heading{
@@ -14,7 +15,11 @@ body{
     font-family: "Open Sans";
     margin-bottom: 40px;
     text-align: center;
+    font-size: 27px;
+    margin-top: 50px;
 }
+
+
 
 .buttons-container{
     text-align: center;
@@ -41,7 +46,7 @@ body{
 }
 
 
-input{
+.search-input{
     width: 300px;
     height: 40px;
     border-radius: 5px;
@@ -55,6 +60,8 @@ input{
     margin-right: 16px;
 }
 
+
+
 .add-button{
     height: 40px;
     width: 45px;
@@ -65,6 +72,8 @@ input{
     font-weight: bold;
     font-size: 12px;
 }
+
+
 
 .add-button:hover{
     background-color: rgb(24, 105, 31);
@@ -101,6 +110,20 @@ input{
     margin-bottom: 20px;
     width: 100%;
 }
+
+.input-tasks-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
 .refresh-button{
     width: 40px;
     border-radius: 5px;
@@ -111,6 +134,36 @@ input{
     align-content: center;
     padding: 7px;
     
+}
+
+@media screen and (max-width:576px){
+    .refresh-button{
+        width: 55px;
+        height: 40px;
+    }
+    .mytasks-heading{
+        font-size: 25px;
+    }
+    .save-head-container{
+        width: 326px;
+    }
+    .add-button{
+        width: 55px;
+    }
+    .search-input{
+        width: 250px;
+    }
+    
+    .todo-heading{
+        text-align: center;
+        font-size: 24px;
+
+    }
+   
+    .list-container{
+      width: 375px;
+       
+    }
 }
 
 .empty-container{
@@ -127,74 +180,3 @@ input{
     border: 2px solid #ffffff;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 20px;
-    }
-
-    .todo-heading {
-        font-size: 24px;
-    }
-
-    .hr-line {
-        width: 80%;
-    }
-
-    input {
-        width: 80%;
-        margin-right: 0;
-    }
-
-    .create-button, .list-button {
-        width: 80px;
-        font-size: 16px;
-    }
-
-    .add-button {
-        width: 35px;
-        font-size: 10px;
-    }
-
-    .refresh-button {
-        width: 35px;
-        font-size: 10px;
-    }
-}
-
-/* For smartphones (screen width up to 480px) */
-@media (max-width: 480px) {
-    body {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .todo-heading {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-
-    .hr-line {
-        width: 100%;
-    }
-
-    input {
-        width: 100%;
-        font-size: 12px;
-    }
-
-    .add-button {
-        width: 30px;
-        font-size: 10px;
-    }
-
-    .create-button, .list-button {
-        width: 70px;
-        font-size: 14px;
-    }
-
-    .refresh-button {
-        width: 30px;
-        font-size: 10px;
-    }
-}
