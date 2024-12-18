@@ -14,7 +14,10 @@
     align-items: center;
     background-color: transparent;
     border-radius: 7px;
-   
+    transition: transform .2s;
+}
+.list-item:hover{
+    transform: scale(1.1);
 }
 
 
@@ -100,6 +103,39 @@
     .todo-item{
         min-width: 180px;
     }
+    .edit-input{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width:320px) {
+    
+    .item{
+        width: 100%;
+    }
+    
+    .checkbox{
+        width: 40px;
+    }
+    .delete-btn{
+        width: 100px;
+        height: 50px;
+    }
+    .todo-item{
+        min-width: 100px;
+       
+        padding: 0px 5pxpx 0px 10px;
+        font-size: 12px;
+    }
+    .list-item{
+        
+        
+    }
+    .edit-input{
+        font-size: 12px !important;
+        
+        
+    }
 
 }
 
@@ -123,5 +159,9 @@
     padding: 0px;
     margin: 0px;
     cursor: text;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+   
 }
+
 

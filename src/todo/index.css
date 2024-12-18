@@ -166,6 +166,37 @@ body{
     }
 }
 
+@media screen and (max-width:576px){
+    .refresh-button{
+        width: 40px;
+        height: 33px;
+    }
+    .mytasks-heading{
+        font-size: 20px;
+    }
+    .save-head-container{
+        width: 270px;
+    }
+    .add-button{
+        width: 55px;
+    }
+    .search-input{
+        width: 200px;
+        font-size: 12px;
+    }
+    
+    .todo-heading{
+        text-align: center;
+        font-size: 24px;
+
+    }
+   
+    .list-container{
+      width: 280px;
+       
+    }
+}
+
 .empty-container{
     display: flex;
     justify-content: center;
